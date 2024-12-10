@@ -1,0 +1,20 @@
+advise_health_task:
+  description: >
+    Review the daily journal entry and provide comments on the positive and negative impacts of their actions from a health perspective.
+    For any potential negative impacts found, provide some suggestions to help the user take action and make progress.
+    Here is today's journal entry from the user: {dailyEntry}
+  expected_output: >
+    A list with up to 5 bullet points of the most significant health impacts relevant to the user's daily and habitual actions.
+    If no relevant health-related data was provided by the user, just say "Not enough health-related info provided".
+    Formatted as markdown without '```'
+  agent: health_advisor
+
+advise_finances_task:
+  description: >
+    Review the daily journal entry and provide comments on the positive and negative impacts of their actions from a financial perspective.
+    For any potential negative impacts found, provide some suggestions to help the user take action and make progress.
+  expected_output: >
+    A fully fledged report with up to 5 bullet points of the main financial impacts relevant to the user's daily and habitual actions.
+    If no relevant health-related data was provided by the user, just say "Not enough health-related info provided".
+    Formatted as markdown without '```'
+  agent: financial_advisor

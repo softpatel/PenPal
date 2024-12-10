@@ -1,0 +1,20 @@
+[project]
+name = "penpals"
+version = "0.1.0"
+description = "PenPals using crewAI"
+authors = [{ name = "softpatel", email = "nilp4919@gmail.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.86.0,<1.0.0"
+]
+
+[project.scripts]
+penpals = "penpals.main:run"
+run_crew = "penpals.main:run"
+train = "penpals.main:train"
+replay = "penpals.main:replay"
+test = "penpals.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
