@@ -21,6 +21,6 @@ MODEL=claude-3-5-sonnet-20240620
 ANTHROPIC_API_KEY=<insert your own API key>
 ```
 
-To run the PenPals crew, input your daily entry into the dailyEntry field within the main.py file. Then open a terminal pointing to the project's root directory and run `crewai run`.
+To run the PenPals crew, open a terminal pointing to the project's root directory and run `crewai run`. It will ask you how your day went and wait for your response.
 
 The feedback from each agent will be generated and saved into a markdown file within the project's root directory.
