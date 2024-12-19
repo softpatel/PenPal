@@ -15,6 +15,16 @@ advise_finances_task:
     For any potential negative impacts found, provide some suggestions to help the user take action and make progress.
   expected_output: >
     A fully fledged report with up to 5 bullet points of the main financial impacts relevant to the user's daily and habitual actions.
-    If no relevant health-related data was provided by the user, just say "Not enough health-related info provided".
+    If no relevant financial-related data was provided by the user, just say "Not enough financial-related info provided".
     Formatted as markdown without '```'
   agent: financial_advisor
+
+advise_career_task:
+  description: >
+    Review the daily journal entry and provide comments on the positive and negative impacts of their actions from a career-oriented perspective.
+    For any potential negative impacts found, provide some suggestions to help the user take action and make progress.
+  expected_output: >
+    A fully fledged report with up to 5 bullet points of the main career impacts relevant to the user's daily and habitual actions.
+    If no relevant career-related data was provided by the user, just say "Not enough career-related info provided".
+    Formatted as markdown without '```'
+  agent: career_advisor
