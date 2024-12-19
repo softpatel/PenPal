@@ -21,6 +21,13 @@ class PenPals():
 			config=self.agents_config['financial_advisor'],
 			verbose=True
 		)
+		
+	@agent
+	def career_advisor(self) -> Agent:
+		return Agent(
+			config=self.agents_config['career_advisor'],
+			verbose=True
+		)
 
 	@task
 	def advise_health_task(self) -> Task:
@@ -34,6 +41,13 @@ class PenPals():
 		return Task(
 			config=self.tasks_config['advise_finances_task'],
 			output_file='finance report.md'
+		)
+	
+	@task
+	def advise_career_task(self) -> Task:
+		return Task(
+			config=self.tasks_config['advise_career_task'],
+			output_file='career report.md'
 		)
 
 	@crew

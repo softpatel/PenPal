@@ -4,11 +4,11 @@ PenPals is an AI-powered journaling app where you enter your daily entries and g
 Mentors you can add into your circle include:
 - Financial advisor
 - Health Advisor
-(Future ideas)
-- Fitness instructor
-- Event planner
-- Relationship guide
 - Career guide
+- (Potential Future ideas)
+  - Fitness instructor
+  - Event planner
+  - Relationship guide
 
 Start by choosing your advisors and then providing some details about yourself and some of the goals you have. Your advisors will track your progress via your daily entries and report any insights or advice.
 
